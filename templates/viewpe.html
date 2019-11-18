@@ -1,0 +1,19 @@
+
+<table align="center" border="2">
+    <tr>
+        <th>Aadhar No</th>
+        <th>Name</th>
+        <th>Contact</th>
+        <th width="200">Address</th>
+    </tr>
+
+    {% for x in data %}
+        <tr>
+        <th>{{ x.aadhar }}</th>
+        <th>{{ x.pname }}</th>
+        <th>{{ x.contact }}</th>
+        <th width="200">{{ x.address }}</th>
+    </tr>
+    {% endfor %}
+
+</table>
